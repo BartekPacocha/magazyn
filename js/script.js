@@ -28,3 +28,4 @@ error:function (){}
 
 
 // zmiana 
+// zmiana 2
