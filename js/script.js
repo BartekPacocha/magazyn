@@ -13,12 +13,13 @@ success:function(data){
 		message.style.display = 'block';
 		message.innerHTML = "Nazwa użytkownika dostępna";
 		message.disabled = false;
+		message.className -= " wrong";
 	}
 	else{
 		message.style.display = 'block';
 		message.innerHTML = "Nazwa użytkownika niedostępna";
 		message.disabled = true;
-		message.className += " wrong";;
+		message.className += " wrong";
 	}
 	
 },
