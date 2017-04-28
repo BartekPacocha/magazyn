@@ -1,6 +1,7 @@
 <?php 
 require( 'db.php'); 
-include( 'inc/header.php'); 
+//include( 'inc/header.php'); 
+include('inc/reg_view.php');
 ?>
 
 
