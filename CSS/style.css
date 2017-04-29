@@ -64,3 +64,22 @@ input[type='submit']:hover {
 #printCheck.wrong{
 	color: red;
 }
+.user-view{
+	float: right;
+	font-size: 16px;
+	color: #9d9d9d;
+}
+
+.user-view .user-name{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.logout_container a{
+	font-size: 20px;
+}
+
+.login_reg_question{
+	color: black;
+	font-weight: bold;
+}

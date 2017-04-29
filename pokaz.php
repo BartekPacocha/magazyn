@@ -4,12 +4,6 @@ include( 'inc/header.php');
 include( 'inc/footer.php'); 
 ?>
 
-
-
-
-
-
-
 <body>
   <div class="container-fluid">
   <div class="table_container">
@@ -23,15 +17,7 @@ include( 'inc/footer.php');
 </form><br>
 
 
-
-
-
-
-
 <?php
-
-
-
 
 
 if(isset( $_POST['sub1'])){
@@ -46,10 +32,6 @@ if(isset( $_POST['sub1'])){
 else {
   $sort = "nazwa";
 }
-
-
-
-
 
     $sql = "SELECT produkt.id_produkt,produkt.nazwa, produkt.ilosc, pozycja.miejsce FROM produkt INNER JOIN pozycja ON produkt.id_pozycja = pozycja.id_pozycja ORDER BY $sort ";
     $result = $conn->query($sql);
@@ -82,7 +64,3 @@ else {
 
 </div>
 </div>
-
-
-</body>
-</html>

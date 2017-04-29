@@ -8,11 +8,6 @@ include( 'inc/footer.php');
 
 
 
-
-  		// Create connection
-
-
-
       $sql = "SELECT * FROM produkt";
     	$result = $conn->query($sql);
 
@@ -23,7 +18,7 @@ include( 'inc/footer.php');
 
       if ($conn->query($sql) === TRUE) {
           echo "Record deleted successfully";
-          header("location: pokaz.php");
+          echo("<script>location.href = '"."pokaz.php';</script>");
           	exit;
       } else {
           echo "Error deleting record: " . $conn->error;

@@ -36,7 +36,7 @@ include( 'inc/footer.php');
 
 
 
-  <?php
+<?php
 
 if(isset($_POST['Update'])){ //check if form was submitted
 
@@ -49,7 +49,7 @@ $sql = "UPDATE produkt SET ilosc = $new_ilosc WHERE id_produkt = $id";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
-    header("location: pokaz.php");
+	echo("<script>location.href = '"."pokaz.php';</script>");
 } else {
     echo "Error updating record: " . $conn->error;
 }
@@ -61,7 +61,7 @@ if ($conn->query($sql) === TRUE) {
 
   	$conn->close();
 
-  	?>
+ ?>
 
 
   <form action="pokaz.php" method="get">
