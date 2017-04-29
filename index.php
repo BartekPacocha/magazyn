@@ -2,7 +2,9 @@
 require( 'db.php'); 
 include( 'inc/header.php'); 
 include( 'inc/footer.php'); 
+include("auth.php");
 ?>
+
 
 <title>Magazyn</title>
 

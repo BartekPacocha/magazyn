@@ -10,12 +10,18 @@ success:function(data){
 	var x = data.trim();
 	var message = document.getElementById("printCheck");
 	var regButtonCheck = document.getElementById("regButton");
+	var user = document.getElementById("username");
 	if(x != "true"){
+		if(user.value == ""){
+			message.style.display = 'none';
+		}
+		else{
 		message.style.display = 'block';
 		message.innerHTML = "Nazwa użytkownika dostępna";
 		message.disabled = false;
 		message.className -= " wrong";
 		regButtonCheck.disabled = false;
+		}
 	}
 	else{
 		message.style.display = 'block';
