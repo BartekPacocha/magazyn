@@ -40,7 +40,12 @@ else {
         echo "<table class='table table-hover table-responsive text-center'><tr><th>Produkt</th><th>Ilosc</th><th>Paleta</th><th>Edytuj</th><th>Usuń</th></tr>";
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>".$row["nazwa"]."</td><td>".$row["ilosc"]."</td><td>".$row["miejsce"]."</td><td><a href='edit.php?id=".$row['id_produkt']."&name=".$row['nazwa']."&ilosc=".$row['ilosc']."'>Edit</a></td><td><a href='delete.php?id=".$row["id_produkt"]."'>x</a></td></tr>";
+            echo 
+			"<tr><td>".$row["nazwa"].
+			"</td><td>".$row["ilosc"].
+			"</td><td>".$row["miejsce"].
+			"</td><td><a class='icon_edit' href='edit.php?id=".$row['id_produkt']."&name=".$row['nazwa']."&ilosc=".$row['ilosc']."'></a>
+			</td><td><a class='icon_delete' href='delete.php?id=".$row["id_produkt"]."'></a></td></tr>";
 
         }
         echo "</table>";

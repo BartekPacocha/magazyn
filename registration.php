@@ -49,7 +49,7 @@ include('inc/reg_view.php');
 				<p id="printCheck"></p></div>
 				<input type="email" name="email" placeholder="Email" required>
 				<input type="password" name="password" placeholder="Hasło" required>
-				<input type="submit" id="regButton" name="submit" value="Register">
+				<input type="submit" id="regButton" class="btn btn-inverse" name="submit" value="Register">
 				</form>
 				<p>Masz już konto? <a href='login.php' class="login_reg_question">Zaloguj się</a></p>
 			</div>

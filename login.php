@@ -3,6 +3,7 @@ require( 'db.php');
 include('inc/reg_view.php');
 session_start();
 ?>
+
 <?php
 if (isset($_POST['username'])){
         // removes backslashes
@@ -37,7 +38,7 @@ and password='".md5($password)."'";
 <form action="" method="post" name="login">
 <input type="text" name="username" placeholder="Username" required />
 <input type="password" name="password" placeholder="Password" required />
-<input name="submit" type="submit" value="Login" />
+<input class="btn btn-inverse" name="submit" type="submit" value="Login" />
 </form>
 <p>Nie masz konta? <a href='registration.php' class="login_reg_question">Zarejestruj się</a></p>
 </div>

@@ -11,7 +11,6 @@
   <script type="text/javascript" src="js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <style><?php include 'CSS/main.css'; ?></style>
   <style><?php include 'CSS/style.css'; ?></style>
   
   
