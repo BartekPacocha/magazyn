@@ -6,7 +6,7 @@ session_start();
 
 <?php
 if (isset($_POST['username'])){
-        // removes backslashes
+        
 	$username = stripslashes($_REQUEST['username']);
 	
 	$username = mysqli_real_escape_string($conn,$username);

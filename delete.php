@@ -4,9 +4,7 @@ include( 'inc/header.php');
 include( 'inc/footer.php'); 
 ?>
 
-  <?php
-
-
+<?php
 
       $sql = "SELECT * FROM produkt";
     	$result = $conn->query($sql);
@@ -24,8 +22,6 @@ include( 'inc/footer.php');
           echo "Error deleting record: " . $conn->error;
 
       }
-
-
 
   	$conn->close();
 
